@@ -14,6 +14,12 @@
 		9E4CDF492C8D8AB100C05FFF /* StartTCA2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CDF482C8D8AB100C05FFF /* StartTCA2Tests.swift */; };
 		9E4CDF532C8D8AB100C05FFF /* StartTCA2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CDF522C8D8AB100C05FFF /* StartTCA2UITests.swift */; };
 		9E4CDF552C8D8AB100C05FFF /* StartTCA2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CDF542C8D8AB100C05FFF /* StartTCA2UITestsLaunchTests.swift */; };
+		9E4CDF642C8D8BA900C05FFF /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9E4CDF632C8D8BA900C05FFF /* ComposableArchitecture */; };
+		9E4CDF662C8D8BBD00C05FFF /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CDF652C8D8BBD00C05FFF /* CounterFeature.swift */; };
+		9E4CDF682C8D8C0200C05FFF /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CDF672C8D8C0200C05FFF /* CounterFeatureTests.swift */; };
+		9E5C035F2C8D9277000789C1 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C035E2C8D9277000789C1 /* NumberFactClient.swift */; };
+		9E5C03612C8D945A000789C1 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C03602C8D945A000789C1 /* AppFeature.swift */; };
+		9E5C03632C8DBD5B000789C1 /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C03622C8DBD5B000789C1 /* AppFeatureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		9E4CDF4E2C8D8AB100C05FFF /* StartTCA2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StartTCA2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4CDF522C8D8AB100C05FFF /* StartTCA2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTCA2UITests.swift; sourceTree = "<group>"; };
 		9E4CDF542C8D8AB100C05FFF /* StartTCA2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTCA2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9E4CDF612C8D8B7300C05FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9E4CDF652C8D8BBD00C05FFF /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
+		9E4CDF672C8D8C0200C05FFF /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
+		9E5C035E2C8D9277000789C1 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
+		9E5C03602C8D945A000789C1 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		9E5C03622C8DBD5B000789C1 /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4CDF642C8D8BA900C05FFF /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +108,15 @@
 		9E4CDF352C8D8AB000C05FFF /* StartTCA2 */ = {
 			isa = PBXGroup;
 			children = (
+				9E4CDF612C8D8B7300C05FFF /* Info.plist */,
 				9E4CDF362C8D8AB000C05FFF /* StartTCA2App.swift */,
 				9E4CDF382C8D8AB000C05FFF /* ContentView.swift */,
 				9E4CDF3A2C8D8AB100C05FFF /* Assets.xcassets */,
 				9E4CDF3F2C8D8AB100C05FFF /* StartTCA2.entitlements */,
 				9E4CDF3C2C8D8AB100C05FFF /* Preview Content */,
+				9E4CDF652C8D8BBD00C05FFF /* CounterFeature.swift */,
+				9E5C035E2C8D9277000789C1 /* NumberFactClient.swift */,
+				9E5C03602C8D945A000789C1 /* AppFeature.swift */,
 			);
 			path = StartTCA2;
 			sourceTree = "<group>";
@@ -116,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				9E4CDF482C8D8AB100C05FFF /* StartTCA2Tests.swift */,
+				9E4CDF672C8D8C0200C05FFF /* CounterFeatureTests.swift */,
+				9E5C03622C8DBD5B000789C1 /* AppFeatureTests.swift */,
 			);
 			path = StartTCA2Tests;
 			sourceTree = "<group>";
@@ -145,6 +164,9 @@
 			dependencies = (
 			);
 			name = StartTCA2;
+			packageProductDependencies = (
+				9E4CDF632C8D8BA900C05FFF /* ComposableArchitecture */,
+			);
 			productName = StartTCA2;
 			productReference = 9E4CDF332C8D8AB000C05FFF /* StartTCA2.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +239,9 @@
 				Base,
 			);
 			mainGroup = 9E4CDF2A2C8D8AB000C05FFF;
+			packageReferences = (
+				9E4CDF622C8D8BA900C05FFF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 9E4CDF342C8D8AB000C05FFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4CDF662C8D8BBD00C05FFF /* CounterFeature.swift in Sources */,
+				9E5C03612C8D945A000789C1 /* AppFeature.swift in Sources */,
 				9E4CDF392C8D8AB000C05FFF /* ContentView.swift in Sources */,
 				9E4CDF372C8D8AB000C05FFF /* StartTCA2App.swift in Sources */,
+				9E5C035F2C8D9277000789C1 /* NumberFactClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E4CDF492C8D8AB100C05FFF /* StartTCA2Tests.swift in Sources */,
+				9E4CDF682C8D8C0200C05FFF /* CounterFeatureTests.swift in Sources */,
+				9E5C03632C8DBD5B000789C1 /* AppFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,12 +451,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = StartTCA2/StartTCA2.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StartTCA2/Preview Content\"";
+				DEVELOPMENT_TEAM = 7S9UJ856HM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StartTCA2/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,12 +479,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = StartTCA2/StartTCA2.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StartTCA2/Preview Content\"";
+				DEVELOPMENT_TEAM = 7S9UJ856HM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StartTCA2/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E4CDF622C8D8BA900C05FFF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E4CDF632C8D8BA900C05FFF /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E4CDF622C8D8BA900C05FFF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9E4CDF2B2C8D8AB000C05FFF /* Project object */;
 }
